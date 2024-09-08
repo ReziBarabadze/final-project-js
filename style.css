@@ -1,3 +1,4 @@
+/* header & cover */
 header {
   height: 860px;
   background-image: url("./images/cover.png");
@@ -14,6 +15,9 @@ header {
    position: fixed;
   top: 0;
   width: 100%;
+}
+.logo, .header_block_ul li a{
+  outline: none;
 }
 /* display block burger */
 .burrger_bar{
@@ -53,3 +57,186 @@ header {
   color: #FFFFFF;
   cursor: pointer;
 }
+/* section N1 */
+.sub_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #141414;  /* background*/
+}
+.text_container{
+  padding: 0 412px 50px;
+  text-align: center;
+}
+.text_container_h2{
+  color: #FFFFFF;
+  font-size: 54px;
+  margin-bottom: 14px;
+  cursor: default;
+}
+.text_container_p{
+  color: #999999;
+  font-size: 18px;
+  cursor: default;
+}
+.fa-play{
+  font-size: 28px;
+}
+.sub_container_button_a{
+  outline: none;
+}
+.sub_container_button{
+  width: 251px;
+  height: 64px;
+  background-color: #E50000;
+  color: #ffff;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+/*  Movies category */
+.arrow_section{
+  background-color: #141414;
+  padding: 200px 161px 150px;
+  display: flex;
+  flex-direction: column;
+}
+.arrow_section_top_box{
+  display: flex;
+  column-gap: 100px;
+  margin-bottom: 80px;
+}
+.arrow_section_text_container_h2{
+  color: #FFFFFF;
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+.arrow_section_text_container_p{
+  color: #999999;
+  font-size: 18px;
+}
+.button_box{
+  padding: 16px;  
+  background-color: #0F0F0F;
+  border-radius: 12px;
+  border: 1px solid #1F1F1F;
+  display: flex;
+  align-items: center;
+}
+.left_arrow, .right_arrow{
+  outline: none;
+}
+.dot_button.dot_button_red{
+  background-color: red;
+  border: none;
+  width: 23px;
+  height: 4px;
+  border-radius: 1px;
+}
+.dot_button{
+  background-color: #333333;
+  border: none;
+  width: 16px;
+  height: 4px;
+  border-radius: 2px;
+  outline: none;
+}
+ .buttons_dots{
+  margin-inline: 16px;
+  display: flex;
+  column-gap: 3px;
+  align-items: center;
+ }
+.button_box_button{
+  background-color: #1A1A1A;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 14px;
+  border: 1px solid #1F1F1F;
+}
+.fa-arrow-left, .fa-arrow-right {
+  color: #FFFFFF;
+  font-size: 28px;
+}
+/* cards */
+.arrow_section_bottom_box_cards{
+  display: flex;
+  justify-content: space-between;
+}
+.arrow_section_bottom_box_cards a{
+  outline: none;
+}
+.cards_image{
+  width: 150px;
+  height: 175px;
+}
+.card{
+  padding: 30px;
+  background-color: #1A1A1A;
+  border-radius: 12px;
+  border: 1px solid #262626;
+}
+.dards_bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.film_card_p{
+  color: #FFFFFF;
+  font-size: 18px;
+}
+/* devices_section */
+.devices_section{
+  background-color: #141414;
+  padding: 0 161px 150px;
+}
+.devices_section_top_section{
+  margin-bottom: 80px;
+}
+.devices_section_h2{
+  font-size: 38px;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+.devices_section_p{
+  font-size: 18px;
+  color: #999999;
+}
+.device_cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.device_cards_each{
+  border: 1px solid #262626;
+  border-radius: 12px;
+  background-color: #0F0F0F;
+  padding: 40px;
+  width: 370px;
+  height: 170;
+  cursor: pointer;
+}
+.device_cards_each a{
+  outline: none;
+}
+.device_cards_boxx{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.device_cards_h2{
+  color: #FFFFFF;
+  margin-left: 16px;
+}
+.device_cards_p{
+  color: #999999;
+}
+

@@ -1,53 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/7b4dd784d1.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <!-- header -->
-  <header>
-    <div class="header_block">
-      <div>
-        <a href="index.html">
-        <img src="images/Logo.svg" alt="logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7b4dd784d1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header & cover -->
+    <header>
+      <div class="header_block">
+        <div>
+          <a href="index.html" class="logo">
+            <img src="images/Logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="burrger_bar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="header_block_nav">
+          <ul class="header_block_ul">
+            <li>
+              <a href="#" class="active">Home</a>
+            </li>
+            <li>
+              <a href="#" class="inactive">Movies & Shows</a>
+            </li>
+            <li>
+              <a href="#" class="inactive">Support</a>
+            </li>
+            <li>
+              <a href="#" class="inactive">Subscriptions</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_block_icons_box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-bell"></i>
+        </div>
+      </div>
+    </header>
+    <!-- section N1 -->
+      <div class="sub_container">
+        <div class="text_container">
+          <h2 class="text_container_h2">The Best Streaming Experience</h2>
+          <p class="text_container_p">
+            StreamVibe is the best streaming experience for watching your
+            favorite movies and shows on demand, anytime, anywhere. With
+            StreamVibe, you can enjoy a wide variety of content, including the
+            latest blockbusters, classic movies, popular TV shows, and more. You
+            can also create your own watchlists, so you can easily find the
+            content you want to watch.
+          </p>
+        </div>
+        <a href="#" class="sub_container_button_a"> 
+          <button class="sub_container_button">
+            <i class="fa-solid fa-play"></i> Start Watching Now
+          </button>
         </a>
       </div>
-      <div class="burrger_bar">
-        <i class="fa-solid fa-bars"></i>
+    </section>
+    <!-- Movies category -->
+    <section class="arrow_section">
+      <div class="arrow_section_top_box">
+        <div class="arrow_section_text_container">
+          <h2 class="arrow_section_text_container_h2">Explore our wide variety of categories</h2>
+          <p class="arrow_section_text_container_p">Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new</p>
+        </div>
+        <div class="button_box">
+          <a href="#" class="left_arrow">
+            <button class="button_box_button">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </a>
+          <div class="buttons_dots">
+          <button class="dot_button dot_button_red"></button>
+          <button class="dot_button"></button>
+          <button class="dot_button"></button>
+          <button class="dot_button"></button>
+          </div>
+          <a href="#" class="right_arrow">
+            <button class="button_box_button">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
+        </div>
       </div>
-      <nav class="header_block_nav">
-        <ul class="header_block_ul">
-          <li>
-            <a href="#" class="active">Home</a>
-          </li>
-          <li>
-            <a href="#" class="inactive">Movies & Shows</a>
-          </li>
-          <li>
-            <a href="#" class="inactive">Support</a>
-          </li>
-          <li>
-            <a href="#" class="inactive">Subscriptions</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header_block_icons_box">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-bell"></i>  
+      <!-- cards -->
+      <div class="arrow_section_bottom_box_cards">
+          <a href="#">
+            <div class="card">  
+            <img src="images/cards1.png" alt="img" class="cards_image">
+          <div class="dards_bottom">
+            <p class="film_card_p">Action</p>
+          <i class="fa-solid fa-arrow-right extra_arrow"></i>
+          </div>
+        </div>
+          </a>
+          <a href="#">
+        <div class="card">
+            <img src="images/cards2.png" alt="img" class="cards_image">
+          <div class="dards_bottom">
+            <p class="film_card_p">Adventure</p>
+          <i class="fa-solid fa-arrow-right extra_arrow"></i>
+          </div>
+        </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <img src="images/cards3.png" alt="img" class="cards_image">
+              <div class="dards_bottom">
+                <p class="film_card_p">Comedy</p>
+              <i class="fa-solid fa-arrow-right extra_arrow"></i>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <img src="images/cards4.png" alt="img" class="cards_image">
+              <div class="dards_bottom">
+                <p class="film_card_p">Drama</p>
+              <i class="fa-solid fa-arrow-right extra_arrow"></i>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <img src="images/cards5.png" alt="img" class="cards_image">
+              <div class="dards_bottom">
+                <p class="film_card_p">Horror</p>
+              <i class="fa-solid fa-arrow-right extra_arrow"></i>
+              </div>
+            </div>
+          </a>
       </div>
-    </div>
-  </header>
+    </section>
+    <!-- devices section -->
+     <section class="devices_section">
+      <div class="devices_section_top_section">
+        <h2 class="devices_section_h2">We Provide you streaming experience across various devices.</h2>
+        <p class="devices_section_p">With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.</p>
+      </div>
+      <!-- cards -->
+      <div class="device_cards">
+        <div class="device_cards_each">
+          <a href="#">
+            <div class="">
+              <img src="images/smartphone.svg" alt="icon">
+              <h2 class="device_cards_h2">Smartphones</h2>
+            </div>
+            <p class="device_cards_p">StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store</p>
+          </a>
+        </div>
+       <div class="device_cards_each">
+        <a href="#">
+          <div class="device_cards_boxx">
+            <img src="images/tablete.svg" alt="icon">
+            <h2 class="device_cards_h2">Tablet</h2>
+          </div>
+          <p class="device_cards_p">StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store</p>
+        </a>
+       </div>
+       <div class="device_cards_each">
+        <a href="#">
+          <div class="device_cards_boxx">
+            <img src="images/smart Tv.svg" alt="icon">
+            <h2 class="device_cards_h2">Smart TV</h2>
+          </div>
+          <p class="device_cards_p">StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store</p>
+        </a>
+       </div>
+       <div class="device_cards_each">
+        <a href="#">
+          <div class="device_cards_boxx">
+            <img src="images/LAPTOPS.svg" alt="icon">
+            <h2 class="device_cards_h2">Laptops</h2>
+          </div>
+          <p class="device_cards_p">StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store</p>
+        </a>
+       </div>
+        <div class="device_cards_each">
+          <a href="#">
+            <div class="device_cards_boxx">
+              <img src="images/gaming console.svg" alt="icon">
+              <h2 class="device_cards_h2">Gaming Consoles</h2>
+            </div>
+            <p class="device_cards_p">StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store</p>
+          </a>
+        </div>
+        <div class="device_cards_each">
+          <a href="#">
+            <div class="device_cards_boxx">
+              <img src="images/vr headsetsvg.svg" alt="icon">
+              <h2 class="device_cards_h2">VR Headsets </h2>
+            </div>
+            <p class="device_cards_p">StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store</p>
+          </a>
+        </div>
+      </div>
+     </section>
 
-  <section class="section_N1">
-
-  </section>
 
 
-  <script src="script.js"></script>
-</body>
+
+
+
+
+
+
+
+  
+    <script src="script.js"></script>
+  </body>
 </html>
