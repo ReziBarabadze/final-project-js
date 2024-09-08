@@ -232,6 +232,12 @@ header {
   align-items: center;
   margin-bottom: 30px;
 }
+.device_cards_boxx_img{
+  padding: 16px;
+  background-color: #141414;
+  border-radius: 12px;
+  border: 1px solid #1F1F1F;
+}
 .device_cards_h2{
   color: #FFFFFF;
   margin-left: 16px;
@@ -239,4 +245,33 @@ header {
 .device_cards_p{
   color: #999999;
 }
-
+/* FAQ section */
+.FAQ_section{
+  background-color: #141414;
+  padding: 0 162px 150px;
+}
+.FAQ_up{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.FAQ_up_h2{
+  font-size: 38px;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+  cursor: default;
+}
+.FAQ_up_p{
+  font-size: 18px;
+  color: #999999;
+  cursor: default;
+}
+.FAQ_up_button{
+  border: none;
+  padding: 18px 24px;
+  background-color: #E50000;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 18px;
+  cursor: pointer;
+}
