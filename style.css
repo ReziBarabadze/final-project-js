@@ -1,5 +1,5 @@
 /* header & cover */
-header {
+.index_page {
   height: 860px;
   background-image: url("./images/cover.png");
   background-position: center;
@@ -451,6 +451,7 @@ header {
   outline: none;
   background-color: #E50000;
   color: #FFFFFF;
+  cursor: pointer;
 }
 /* footer */
 footer{
@@ -510,3 +511,120 @@ footer{
   border-right: 1px solid #262626;
   padding-right: 20px;
 }
+
+
+
+
+/* support section */
+.form_main_box{
+  display: flex;
+}
+.form_section{
+  padding: 261px 162px 120px;
+  background-color: #141414;
+}
+.left_form_main_box{
+  width: 533px;
+  margin-right: 80px;
+}
+.form_section_h2{
+  font-size: 48px;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+.form_section_p{
+  font-size: 18px;
+  color: #999999;
+  margin-bottom: 50px;
+}
+.form_section_img{
+  width: 100%;
+}
+/* form box */
+.right_form_main_box{
+  background-color: #0F0F0F;
+  padding: 50px;
+  border-radius: 12px;
+  border: 1px solid #262626;
+}
+.form_box_first_line{
+  display: flex;
+  margin-bottom: 50px;
+}
+.form_box_first_line_fname_lname label{
+  font-size: 18px;
+  color: #ffff;
+}
+.form_box_first_line_fname_lname input{
+  margin-top: 16px;
+  padding: 20px;
+  background-color: #141414;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+
+.form_box_second_line{
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.countrys select{
+  width: 49px;
+  height: 50px;
+  outline: none;
+  border: none;
+  margin-top: 30px;
+  margin-right: 10px;
+  background-color: #141414;
+  border-radius: 8px;
+  color: #FFFFFF;
+  border: 1px solid #262626;
+}
+.textarea_div{
+  display: flex;
+  flex-direction: column;
+}
+.textarea_div label {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.textarea_div textarea{
+  resize: none;
+  border: none;
+  outline: none;
+  border: 1px solid #262626;
+  margin-top: 16px;
+  background-color: #141414;
+  color: #FFFFFF;
+  width: 550px;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+.last_form_div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkbox_title label{
+  font-size: 18px;
+  color: #999999;
+}
+.submit_button{
+  padding: 18px 24px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #E50000;
+  color: #FFFFFF;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+
