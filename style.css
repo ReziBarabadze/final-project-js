@@ -7,25 +7,25 @@
   background-size: cover;
   background-color: #0f0f0f;
 }
+.for_fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  transition: all 1s;
+}
+.for_fixed.activeFixed{
+  opacity: 0;
+}
 .header_block {
   padding: 22px 162px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-   position: fixed;
-  top: 0;
-  width: 100%;
+  position: relative;
 }
 .logo, .header_block_ul li a{
   outline: none;
-}
-/* display block burger */
-.burrger_bar{
-  border: 3px solid #262626;
-  border-radius: 6px;
-  background-color: #1A1A1A;
-  padding: 12px;
-  display: none;
 }
 .fa-bars{
   font-size: 24px;
@@ -44,6 +44,43 @@
 }
 .header_block_ul li a {
   color: #bfbfbf;
+}
+.burger_bar{
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FFFFFF;
+  position: absolute;
+  /* top: 25px; */
+  right: 187px;
+  display: none;
+}
+.burger_bar.activeBurgerBar .line1{
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.burger_bar.activeBurgerBar .line2 {
+  display: none;
+}
+.burger_bar.activeBurgerBar .line3{
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.line{
+  width: 80%;
+  height: 4px;
+  background-color: #E50000;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .2s;
+}
+.line1{
+  top: 30%;
+}
+.line3{
+  top: 70%;
 }
 .header_block_icons_box {
   width: 98px;

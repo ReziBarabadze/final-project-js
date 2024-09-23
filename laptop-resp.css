@@ -1,0 +1,33 @@
+
+@media (max-width: 1201px) {
+  /* header */
+  .burger_bar{
+    display: block;
+    right: 50px;
+  }
+  .header_block_nav{
+    display: none;
+  }
+  .header_block_icons_box{
+    display: none;
+  }
+  .header_block{
+    flex-direction: column;
+  }
+  .logo_div{
+    margin-bottom: 30px;
+  }
+  .header_block_ul{
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    justify-content: space-between;
+  }
+  .header_block_nav.activeNav{
+    display: block;
+  }
+  .header_block_icons_box.activeIcons{
+    margin-top: 20px;
+    display: block; 
+  }
+}
