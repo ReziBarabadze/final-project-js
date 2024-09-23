@@ -5,45 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script
-    src="https://kit.fontawesome.com/7b4dd784d1.js"
-    crossorigin="anonymous"
-  ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7b4dd784d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="laptop-resp.css">
 </head>
 <body>
   <!-- header -->
-  <header class="support_page">
-    <div class="header_block">
-      <div>
-        <a href="index.html" class="logo">
-          <img src="images/Logo.svg" alt="logo" />
-        </a>
-      </div>
-      <div class="burrger_bar">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <nav class="header_block_nav">
-        <ul class="header_block_ul">
-          <li>
-            <a href="index.html" class="active">Home</a>
-          </li>
-          <li>
-            <a href="#" class="inactive">Movies & Shows</a>
-          </li>
-          <li>
-            <a href="support.html" class="inactive">Support</a>
-          </li>
-          <li>
-            <a href="#" class="inactive">Subscriptions</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header_block_icons_box">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-bell"></i>
+  <header  class="index_page">
+    <div class="for_fixed" id="headerFixed">
+      <div class="header_block">
+        <div class="logo_div">
+          <a href="index.html" class="logo">
+            <img src="images/Logo.svg" alt="logo" />
+          </a>
+        </div>
+        <nav class="header_block_nav" id="navBar">
+          <ul class="header_block_ul">
+            <li>
+              <a href="index.html" class="inactive item">Home</a>
+            </li>
+            <li>
+              <a href="#" class="inactive item">Movies & Shows</a>
+            </li>
+            <li>
+              <a href="support.html" class="active item">Support</a>
+            </li>
+            <li>
+              <a href="#" class="inactive item">Subscriptions</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger_bar" id="burgetBar">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+        <div class="header_block_icons_box" id="icons">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-bell"></i>
+        </div>
       </div>
     </div>
+    
   </header>
   <!-- form -->
   <section class="form_section">
@@ -102,7 +108,7 @@
                 <label for="">I agree with Terms of Use and Privacy Policy</label>
               </div>
               <div class="button_div">
-                <button type="submit" class="submit_button">Submit</button>
+                <button type="submit" class="submit_button">Subscriptions</button>
               </div>
             </div>
         </form>
@@ -317,5 +323,7 @@
         </div>
       </div>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
