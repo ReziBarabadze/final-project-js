@@ -350,6 +350,32 @@
   border-bottom: 1px solid #E50000;
   /* cursor: pointer; */
 }
+/* .accordion_main{
+  max-width: 700px;
+  width: 100%;
+} */
+ .acc_title{
+  position: relative;
+ }
+ .acc_title::before{
+  content: '	\002b';
+  font-size: 40px;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+ }
+ .acc_content{
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  color: #999999;
+  font-size: 18px;
+  margin-top: 45px;
+  transition: all 0.5s;
+ }
 .FAQ_bottom_left_side_h2, .FAQ_bottom_left_right_h2{
   width: 62px;
   height: 67px;
@@ -362,17 +388,22 @@
   color: #FFFFFF;
   cursor: default;
 }
+.accordion_container.activeAccordion .acc_title::before{
+  content: '\002d';
+  font-size: 60px;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: absolute;
+}
+.accordion_container.activeAccordion .acc_content{
+ height: 100px;
+}
 .FAQ_bottom_left_side_div, .FAQ_bottom_left_right_div{
   width: 360px;
 }
 .FAQ_bottom_left_side_p, .FAQ_bottom_left_right_p{
   font-size: 22px;
   color: #FFFFFF  ;
-}
-.fa-plus{
-  font-size: 30px;
-  color: #FFFFFF;
-  cursor: pointer;
 }
 /* subscription section */
 .plan_section{
