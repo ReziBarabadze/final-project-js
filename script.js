@@ -106,7 +106,7 @@ fetch(
   })
 
   .catch(function (error) {
-    console.log(error);
+    // console.log(error);
   });
 
 
@@ -139,7 +139,7 @@ getUsers();
 
 
   
-//ფუნქცია დივის შესაქმნელად
+//function for div
 function divtag() {
   const divEl = document.createElement('div');
   divEl.classList.add('main_div')
@@ -147,7 +147,7 @@ function divtag() {
 }
 
  
-// ფუნქცია სურათის შესაქმნელად
+// function for images
 
 function imgTag(item) {
   const tagEl = document.createElement('img');
@@ -156,7 +156,7 @@ function imgTag(item) {
   return tagEl;
 }
 
-//ფუნქცია სათაურის შესაქმნელად
+//function for title
 
 function titleTag(item) {
   const titleEl = document.createElement('h2');
@@ -167,11 +167,12 @@ function titleTag(item) {
 
 
 
-// ისრების ფუნქციონალი
+
+// function for arrow
 
 function arrowLeftClick() {
   if (sliderIndex == 0) {
-    sliderIndex = dataInfo.length - 1;
+    sliderIndex = 0;
     getUsers();
     return;
   }
@@ -185,18 +186,138 @@ function arrowRightClick() {
     getUsers();
     return;
   }
+  
   sliderIndex++;
   getUsers();
 }
 
-arrowLeft.addEventListener('click', arrowLeftClick)
+
+arrowLeft.addEventListener('click', arrowLeftClick);
 
 
 arrowRight.addEventListener('click', arrowRightClick);
 
 
 
+
+
+
 setInterval(() => {
   arrowRightClick()
-}, 3000)
+}, 5000)
 
+
+
+
+
+
+
+
+// buttons dot
+
+let btnDiv = document.querySelector('.buttons_dots');
+let redButton = document.querySelector('.dot_button');
+
+
+arrowRight.addEventListener('click', function() {
+  redButton.classList.add('dot_button_red');
+  
+
+  // btnDiv.setAttribute('btn_id', dataInfo.imdbID);
+  // btnDiv.forEach(element => {
+  // element.classList.add('dot_button_red');
+  // console.log(this.element);
+  
+    
+  });
+  // redButton.classList.add('dot_button_red');
+  // redButton++;
+  // redButton.classList.add('dot_button_red');
+
+
+  // btnDiv.forEach(element => {
+  //   element.target.redButton.getAttribute('btn_id')
+  // });
+
+
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// form validation
+
+const formEl = document.getElementById('formElement');
+
+formEl.addEventListener('submit', function(e) {
+  e.preventDefault();
+  let errors = {};
+
+  // username
+  const usernameValue = document.getElementById('usernameField').value;
+  if (usernameValue == '') {
+    errors.username = 'Username Field can not be empty';
+  }
+  // password
+  const lastnameValue = document.getElementById('lastnameField').value;
+  if (lastnameValue == '') {
+    errors.lastname = 'Lastname Field can not be empty';
+  }
+  const password1 = document.getElementById('passwordField').value;
+  const password2 = document.getElementById('passwordField2').value;
+
+  if (password1 == '') {
+    errors.password = 'Password field can not be empty';
+  }
+
+  if (password1 !== password2) {
+    errors.password2 = 'Passwords do not match';
+  }
+  // radio
+  let gender = false;
+
+  this.querySelectorAll('[name="gender"]').forEach(item => {    /* შეიძლება ღილაკებზე გამოდგეს */
+    if (item.checked) {
+      gender = true;
+    }
+  })
+
+  if (!gender) {
+    errors.gender = 'Please select your gender';
+  }
+
+  // checkbox 
+  const checkBox = document.getElementById('agreecheck').checked;
+  if (checkBox === false) {
+    errors.check = 'You must agree our terms and conditions';
+  }
+  console.log(errors);   /* წასაშლელია*/
+
+
+
+  this.querySelectorAll('.error_text').forEach(el => {
+    el.textContent = ' ';
+  })
+
+  for (let item in errors) {
+    console.log(item);
+
+    let pErrorElement = document.getElementById('error_' + item);
+    console.log(pErrorElement);
+    if (pErrorElement) {
+      pErrorElement.textContent = errors[item];
+    }
+    
+  }
+  
+})

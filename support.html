@@ -61,21 +61,24 @@
       </div>
       <!-- form box -->
       <div class="right_form_main_box">
-        <form action="">
+        <form action="" id="formElement">
           <div class="form_box_first_line">
             <div class="form_box_first_line_fname_lname">
               <label for="">First Name</label>
-              <input type="text" placeholder="Enter First Name">
+              <input type="text" name="username" id="usernameField" placeholder="Enter First Name">
+              <p class="error_text" id="error_username"></p>
             </div>
             <div class="form_box_first_line_fname_lname">
               <label for="">Last Name</label>
-              <input type="text" placeholder="Enter Last Name">
+              <input type="text" name="lastname" id="lastnameField" placeholder="Enter Last Name">
+              <p class="error_text" id="error_lastname"></p>
             </div>
           </div>
           <div class="form_box_second_line">
             <div class="form_box_first_line_fname_lname">
               <label for="">Your Email</label>
-              <input type="email" placeholder="Enter your email">
+              <input type="email" name="email"  id="youremail" placeholder="Enter your email">
+              <p class="error_text" id="error_email"></p>
             </div>
             <div class="countrys">
               <select id="country" name="country" class="form-control">
@@ -95,17 +98,31 @@
             </div>
             <div class="form_box_first_line_fname_lname">
               <label for="">Your Password</label>
-              <input type="password" placeholder="Enter your password">
+              <input type="password" name="password" id="passwordField" placeholder="Enter your password">
+              <p class="error_text" id="error_password"></p>
             </div>
           </div>
-            <div class="textarea_div">
+          <div class="form_box_first_line_fname_lname confirm">
+            <label for="">Confirm Your Password</label>
+            <input type="password" name="password2" id="passwordField2" placeholder="Confirm your password">
+            <p class="error_text" id="error_password2"></p>
+          </div>
+          <div class="gender_div">
+            <input type="radio" name="gender" id="male">
+            <label for="">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="">female</label>
+            <p class="error_text" id="error_gender"></p>
+          </div>
+            <!-- <div class="textarea_div">
               <label for="">Message</label>
               <textarea name="" id="" placeholder="Enter your Message"></textarea>
-            </div>
+            </div> -->
             <div class="last_form_div">
               <div class="checkbox_title">
-                <input type="checkbox" name="checkbox" id="">
-                <label for="">I agree with Terms of Use and Privacy Policy</label>
+                <input type="checkbox" name="check" id="agreecheck">
+                <label for="">I agree Terms And Conditions</label>
+                <p class="error_text" id="error_check"></p>
               </div>
               <div class="button_div">
                 <button type="submit" class="submit_button">Submit</button>

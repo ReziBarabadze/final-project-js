@@ -673,6 +673,21 @@ footer{
   font-size: 18px;
   color: #ffff;
 }
+.confirm{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.confirm label{
+  font-size: 24px;
+  /* padding: 0 px; */
+}
+.gender_div label{
+  font-size: 18px;
+  color: #999999;
+}
 .form_box_first_line_fname_lname input{
   margin-top: 16px;
   padding: 20px;
@@ -684,7 +699,10 @@ footer{
   color: #FFFFFF;
   font-size: 14px;
 }
-
+.error_text{
+  color: #E50000;
+  margin-top: 5px;
+}
 
 .form_box_second_line{
   display: flex;
