@@ -171,7 +171,7 @@ function titleTag(item) {
 // function for arrow
 
 function arrowLeftClick() {
-  if (sliderIndex == 0) {
+  if (sliderIndex === 0) {
     sliderIndex = 0;
     getUsers();
     return;
@@ -301,7 +301,7 @@ formEl.addEventListener('submit', function(e) {
   if (checkBox === false) {
     errors.check = 'You must agree our terms and conditions';
   }
-  console.log(errors);   /* წასაშლელია*/
+  // console.log(errors);   
 
 
 
@@ -310,14 +310,74 @@ formEl.addEventListener('submit', function(e) {
   })
 
   for (let item in errors) {
-    console.log(item);
+    // console.log(item);
 
     let pErrorElement = document.getElementById('error_' + item);
-    console.log(pErrorElement);
+    // console.log(pErrorElement);
     if (pErrorElement) {
       pErrorElement.textContent = errors[item];
     }
-    
+  }
+
+  if (Object.keys(errors).length === 0) {
+    this.submit();
   }
   
+});
+
+
+
+
+// show password icon
+
+
+const passwordEl = document.getElementById('passwordField');
+const iconEye = document.getElementById('toggleIcon');
+
+
+iconEye.addEventListener('click', function() {
+   if (passwordEl.type === 'password') {
+    passwordEl.setAttribute('type', 'text');
+    iconEye.classList.remove('fa-eye');
+    iconEye.classList.add('fa-eye-slash');
+   } else {
+    passwordEl.setAttribute('type', 'password');
+    iconEye.classList.remove('fa-eye-slash');
+    iconEye.classList.add('fa-eye');
+   }
 })
+
+
+
+
+
+
+
+// regulare expression / Regex email
+
+
+
+const emailEl = document.getElementById('email');
+
+
+
+function emailValidation() {
+  const emailValue = document.getElementById('email').value;
+  const errorEmail = document.getElementById('text_email');
+  let regex = /^w+[+.w-]*@([w-]+.)*w+[w-]*.([a-z]{2,4}|d+)$/i;
+
+
+
+  if (emailValue.match(regex)) {
+    errorEmail.textContent = 'Your Email Is Valid';
+    errorEmail.style.color = 'green';
+  } else {
+    errorEmail.textContent = 'Your Email Is Invalid';
+    errorEmail.style.color = 'green';
+  }
+  if (emailValue === '') {
+    errorEmail.innerHTML = ' ';
+  }
+}
+
+emailEl.addEventListener('keyup', emailValidation);

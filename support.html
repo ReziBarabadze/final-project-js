@@ -61,7 +61,7 @@
       </div>
       <!-- form box -->
       <div class="right_form_main_box">
-        <form action="" id="formElement">
+        <form action="" id="formElement" >  <!-- method="POST -->
           <div class="form_box_first_line">
             <div class="form_box_first_line_fname_lname">
               <label for="">First Name</label>
@@ -77,8 +77,8 @@
           <div class="form_box_second_line">
             <div class="form_box_first_line_fname_lname">
               <label for="">Your Email</label>
-              <input type="email" name="email"  id="youremail" placeholder="Enter your email">
-              <p class="error_text" id="error_email"></p>
+              <input type="email" name="emailField"  id="email" placeholder="Enter your email">
+              <p id="text_email"></p>
             </div>
             <div class="countrys">
               <select id="country" name="country" class="form-control">
@@ -99,6 +99,7 @@
             <div class="form_box_first_line_fname_lname">
               <label for="">Your Password</label>
               <input type="password" name="password" id="passwordField" placeholder="Enter your password">
+              <i class="fa-solid fa-eye" id="toggleIcon"></i>
               <p class="error_text" id="error_password"></p>
             </div>
           </div>
@@ -114,6 +115,8 @@
             <label for="">female</label>
             <p class="error_text" id="error_gender"></p>
           </div>
+          <!-- <i class="fa-solid fa-eye"></i> -->
+          <!-- <i class="fa-solid fa-eye-slash"></i> -->
             <!-- <div class="textarea_div">
               <label for="">Message</label>
               <textarea name="" id="" placeholder="Enter your Message"></textarea>

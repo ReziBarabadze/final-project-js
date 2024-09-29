@@ -673,6 +673,10 @@ footer{
   font-size: 18px;
   color: #ffff;
 }
+.fa-solid{
+  font-size: 20px;
+  color: #ffff;
+}
 .confirm{
   margin-bottom: 10px;
   display: flex;
