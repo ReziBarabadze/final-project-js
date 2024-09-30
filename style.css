@@ -258,6 +258,27 @@
 .arrow_section_bottom_box_cards a{
   outline: none;
 }
+.promiseFrame{
+  width: 300px;
+  height: 400px;
+  border: 1px solid #1F1F1F;
+  border-radius: 8px;
+  background-color: #1A1A1A;
+  padding: 20px;
+  position: relative;
+}
+.image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.promiseFrame_h2{
+  font-size: 18px;
+  color: #ffff;
+  text-align: center;
+}
+
 .cards_image{
   width: 150px;
   height: 175px;

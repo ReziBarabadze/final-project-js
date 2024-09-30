@@ -328,6 +328,10 @@ formEl.addEventListener('submit', function(e) {
 
 
 
+
+
+
+
 // show password icon
 
 
@@ -381,3 +385,218 @@ function emailValidation() {
 }
 
 emailEl.addEventListener('keyup', emailValidation);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Promise
+
+const waitFncNew = function(seconds) {
+  return new Promise(function(resolve) {
+    setTimeout(resolve, seconds * 1000);  
+  });
+};
+
+
+const imageContainer = document.querySelector('.image');
+
+
+let currentImage;
+
+const createImgElement = function(imagePath) {
+  return new Promise (function (resolve, reject) {
+    const imgEl = document.createElement('img');
+    imgEl.src = imagePath;
+
+    imgEl.addEventListener('load', function() {
+      imageContainer.appendChild(imgEl);
+      resolve(imgEl);
+    })
+    imgEl.addEventListener('error', function() {
+      reject('Image Not Found');
+    })
+  })
+}
+
+createImgElement('images/cards3.png')
+.then((image) => {
+  currentImage = image;
+  return   waitFncNew(2);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/cards2.png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+
+
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/cards1.png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/cards4.png');
+})
+
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/cards5.png');
+})
+
+
+
+
+
+
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (2).png');
+})
+
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (3).png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (4).png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (5).png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (6).png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (7).png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (8).png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (9).png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (10).png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (11).png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (12).png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (13).png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image (14).png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/Image.png');
+})
+.then((imageSecond) => {
+  currentImage = imageSecond;
+  return waitFncNew(3);
+})
+.then(() => {
+  currentImage.style.display = 'none';
+  return createImgElement('images/cards6.png.png');
+})
+
+
+.catch((errorText) => console.log(errorText));
