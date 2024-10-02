@@ -60,12 +60,12 @@ regex();
 
 
 
-    // cookies
-    if (checkBox.checked) {
-      Cookies.set('cookies_username', usernameValue);                                                 //Cookies
-    } else {
-      Cookies.remove('cookies_username');
-    }
+    // // cookies
+    // if (checkBox.checked) {
+    //   Cookies.set('cookies_username', usernameValue);                                                 //Cookies
+    // } else {
+    //   Cookies.remove('cookies_username');
+    // }
     
 
    
@@ -95,12 +95,12 @@ regex();
     // this.submit();
   });
 
-  const savedUsername = Cookies.get('cookies_username');
+  // const savedUsername = Cookies.get('cookies_username');
 
-  if(savedUsername) {
-   document.getElementById('usernameField').value = savedUsername;
-   document.getElementById('agreecheck').checked = true;     //Cookies მარტო username ზე გავაკეთე, ველა ინფუთზე არა                   
-  }
+  // if(savedUsername) {
+  //  document.getElementById('usernameField').value = savedUsername;
+  //  document.getElementById('agreecheck').checked = true;               
+  // }
 
   
   
