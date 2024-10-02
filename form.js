@@ -92,7 +92,7 @@ regex();
     }
 
 
-    // this.submit();
+    this.submit();
   });
 
   // const savedUsername = Cookies.get('cookies_username');
