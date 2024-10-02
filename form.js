@@ -51,8 +51,8 @@ regex();
     }
   
     // checkbox 
-    let checkBox = document.getElementById('agreecheck');
-    if (checkBox.checked === false) {
+    let checkBox = document.getElementById('agreecheck').checked;
+    if (checkBox === false) {
       errors.check = 'You must agree our terms and conditions';
     }
     // console.log(errors); 
