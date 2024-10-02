@@ -5,10 +5,13 @@ accordion();
 import {burger} from './burger.js';
 burger();
 
+import {regex} from './regex.js';
+regex();
+
 // form validation
 
 
-  const formEl = document.getElementById('formElement');
+    const formEl = document.getElementById('formElement');
 
   formEl.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -48,11 +51,25 @@ burger();
     }
   
     // checkbox 
-    const checkBox = document.getElementById('agreecheck').checked;
-    if (checkBox === false) {
+    let checkBox = document.getElementById('agreecheck');
+    if (checkBox.checked === false) {
       errors.check = 'You must agree our terms and conditions';
     }
-    // console.log(errors);   
+    // console.log(errors); 
+
+
+
+
+    // cookies
+    if (checkBox.checked) {
+      Cookies.set('cookies_username', usernameValue);                                                 //Cookies
+    } else {
+      Cookies.remove('cookies_username');
+    }
+    
+
+   
+      
   
   
   
@@ -73,10 +90,23 @@ burger();
     if (Object.keys(errors).length === 0) {
       this.submit();
     }
-    
+
+
+    // this.submit();
   });
+
+  const savedUsername = Cookies.get('cookies_username');
+
+  if(savedUsername) {
+   document.getElementById('usernameField').value = savedUsername;
+   document.getElementById('agreecheck').checked = true;     //Cookies მარტო username ზე გავაკეთე, ველა ინფუთზე არა                   
+  }
+
   
   
+
+
+
   
   
   
@@ -108,38 +138,9 @@ burger();
   
   
   
-  // regulare expression / Regex email
   
   
-  
-  const emailEl = document.getElementById('email');
-  
-  
-  
-  function emailValidation() {
-    const emailValue = document.getElementById('email').value;
-    const errorEmail = document.getElementById('text_email');
-    let regex = "(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)";
-
-  
-  
-  
-    if (emailValue.match(regex)) {
-      errorEmail.textContent = 'Your Email Is Valid';
-      errorEmail.style.color = 'green';
-    } else {
-      errorEmail.textContent = 'Your Email Is Invalid';
-      errorEmail.style.color = 'red';
-    }
-    
-    if (emailValue === '') {
-      errorEmail.innerHTML = ' ';
-    }
-  }
-  
-  emailEl.addEventListener('keyup', emailValidation);
-  
-
+   
 
 
 
