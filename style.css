@@ -71,6 +71,7 @@
   right: 187px;
   display: none;
 }
+
 .burger_bar.activeBurgerBar .line1{
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
